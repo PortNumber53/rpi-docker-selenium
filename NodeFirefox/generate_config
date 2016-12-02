@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "
+{
+  \"capabilities\": [
+    {
+      \"browserName\": \"firefox\",
+      \"maxInstances\": $NODE_MAX_INSTANCES,
+      \"seleniumProtocol\": \"WebDriver\"
+    }
+  ],
+  \"proxy\": \"org.openqa.grid.selenium.proxy.DefaultRemoteProxy\",
+  \"maxSession\": $NODE_MAX_SESSION,
+  \"port\": 5555,
+  \"register\": true,
+  \"registerCycle\": $NODE_REGISTER_CYCLE
+}" 
+
